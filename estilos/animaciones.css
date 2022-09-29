@@ -1,0 +1,21 @@
+
+
+@keyframes movimiento {
+	from{transform:translate(0px);}
+	to{transform:translate(500px);}
+	0%{transform:translate(0px);}
+	50%{ transform:translate(100vh); -webkit-transform:translate(100vh); -moz-transform:translate(100vh); -ms-transform:translate(100vh); -o-transform:translate(100vh); }
+	100%{transform:translate(0px);}
+}
+
+.animacion {
+	width: 500px;
+	height: 20px;
+	background-color: #ffd64b;
+    opacity: 0.65;
+	animation:movimiento 10s ease infinite;
+    justify-self: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
