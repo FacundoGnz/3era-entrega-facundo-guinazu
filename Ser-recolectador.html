@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recolecta Te</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
     <link  rel="icon"   href="imagenes/logorecolecta.jpg" type="imagenes" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
@@ -16,23 +16,54 @@
     
 
 <header class="Recolectador" >
-    <nav class="Menu">
-        <img class="Menu__Logo" src="imagenes/logorecolecta.jpg" alt="">
-        <ul class="Menu__navegacion" >
-            <li><a href="index.html"> Inicio</a></li>
-            <li><a href="Mi-negocio.html"> Integrar mi negocio</a></li>
-            <li><a href="Ser-recolectador.html"> Ser recolectador</a></li>
-            <li><a href="nosotros.html"> Nosotros</a></li>
-        </ul>
-        <img class="Menu__relleno" src="imagenes/relleno.jpg" alt="">
-        <ul class="Menu__registrarme" >
-            <li><a href="registrarme.html">Registrarme</a></li>
-        </ul>
+    <!-- INICIO DEL NAV HECHO CON BOOTSTRAP -->
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            
+
+            <div class="Logo">
+                <a href="index.html"><img src="imagenes/logo.jpg"  alt=""></a>
+            </div>    
+            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mi-negocio.html">Mi negocio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ser-recolectador.html">Ser recolectador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item-registro">
+                        <a class="nav-link" href="registrarme.html">Registrarme</a>
+                    </li>
+                </ul>
+                <div class="relleno">
+                    <img src="imagenes/relleno.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </nav>
 
+
     <section class="Section__recolectador" >
-        <article>
-            <h3>¿POR QUÉ SER RECOLECTADOR?</h3>
+        <article class="Section__recolectador__articulo" >
+            <div>
+                <h3>¿Por qué ser <span>RECOLECTADOR </span>?</h3>
+            </div>  
             <div class="Section__recolectador__cards">
                 <div class="Section__recolectador__cards_card1">
                     <img src="imagenes/ganancias.jpg" alt="">
@@ -51,36 +82,35 @@
                 </div>
             </div>
         </article>
-        <div class="Section__Recolectador__delivery">
+        <div class="Section__recolectador__delivery">
             <img src="imagenes/delivery.jpg" alt="">
         </div>
     </section>
 </header>
 
 <!-- COMIENZO DEL MAIN -->
+<div class="separador"></div>
 
 <main class="Main__recolectador" >
-    <div class="separador"></div>
+    
     <div class="Main__recolectador__h3">
         <h3>¿Cómo empezar a repartir?</h3>
     </div>
     <section class="Main__recolectador__section1" >
-        <img src="imagenes/registrarme.jpg" alt="">
+        <div class="Main__recolectador__section1__img" >
+            <img src="imagenes/registrarme.jpg" alt="">
+        </div>
+        
         <article class="Main__recolectador__section__cards">
             <div class="Main__recolectador__section__cards_1">
-                <div class="01">
-                    <p><span>01</span></p>
-                </div>
-                <div class="texto">
+                
                     <h3>Registrate en 3 pasos</h3>
                     <p>Descargá la aplicación, ingresá tus datos básicos y cargá tus documentos</p>
-                </div>
+                
             </div>
 
             <div class="Main__recolectador__section__cards_2">
-                <div class="02">
-                    <p><span>01</span></p>
-                </div>
+                
                 <div class="texto">
                     <h3>Reservá tu conexión</h3>
                     <p>Indicá qué día y hora te querés conectar</p>
@@ -88,9 +118,7 @@
             </div>
 
             <div class="Main__recolectador__section__cards_3">
-                <div class="03">
-                    <p><span>01</span></p>
-                </div>
+                
                 <div class="texto">
                     <h3>Realizá tus primeras entregas</h3>
                     <p>Conectate y recibí tus primeros pedidos</p>

@@ -5,55 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recolecta Te</title>
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="estilos/estilos.css">
     <link  rel="icon"   href="imagenes/logorecolecta.jpg" type="imagenes" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
-<nav class="Menu">
-    <img class="Menu__Logo" src="imagenes/logorecolecta.jpg" alt="">
-    <ul class="Menu__navegacion" >
-        <li><a href="index.html"> Inicio</a></li>
-        <li><a href="Mi-negocio.html"> Integrar mi negocio</a></li>
-        <li><a href="Ser-recolectador.html"> Ser recolectador</a></li>
-        <li><a href="nosotros.html"> Nosotros</a></li>
-    </ul>
-    <img class="Menu__relleno" src="imagenes/relleno.jpg" alt="">
-    <ul class="Menu__registrarme" >
-        <li><a href="registrarme.html">Registrarme</a></li>
-    </ul>
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+        
+
+        <div class="Logo">
+            <a href="index.html"><img src="imagenes/logo.jpg"  alt=""></a>
+        </div>    
+        
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link "  href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mi-negocio.html">Mi negocio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ser-recolectador.html">Ser recolectador</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item-registro">
+                    <a class="nav-link" href="registrarme.html">Registrarme</a>
+                </li>
+            </ul>
+            <div class="relleno">
+                <img src="imagenes/relleno.jpg" alt="">
+            </div>
+        </div>
+    </div>
 </nav>
 <body>
-    <article class="Article__nosotros" >
-        <h3>ÚNETE A RECOLECTA TE</h3>
-    </article>
-
-    <section class="Section__nosotros" >
-        <article class="Section__nosotros__1card">
-            <h3>CATEGORIAS</h3>
-            <li class="Section__nosotros__1card__lista" >
-                <ul>Restaurantes</ul>
-                <ul>Supermercados</ul>
-                <ul>Kioscos</ul>
-                <ul>Farmacias</ul>
-                <ul>Licores</ul>
-                <ul>Shopping</ul>
-            </li>
+    <main class="Main__nosotros" >
+        
+        <article class="Article__nosotros" >
+            <h3>Únete a <span>RECOLECTA TE</span></h3>
         </article>
 
-        <article class="Section__nosotros__2card">
-            <h3>ENCONTRANOS EN ESTOS PAÍSES</h3>
-            <li class="Section__nosotros__2card__lista" >
-                <ul>Argentina</ul>
-                <ul>Brasil</ul>
-                <ul>Chile</ul>
-                <ul>Colombia</ul>
-                <ul>Costa Rica</ul>
-                <ul>Ecuador</ul>
-                <ul>México</ul>
-                <ul>Perú</ul>
-                <ul>Uruguay</ul>
-            </li>
-        </article>
+        <section class="Section__nosotros" >
+            <article class="Section__nosotros__1card">
+                
+                    <h3>CATEGORIAS</h3>
+                
+                
+                    <li class="Section__nosotros__1card__lista" >
+                        <ul>Restaurantes</ul>
+                        <ul>Supermercados</ul>
+                        <ul>Kioscos</ul>
+                        <ul>Farmacias</ul>
+                        <ul>Licores</ul>
+                        <ul>Shopping</ul>
+                    </li>
+                
+               
+            </article>
+
+            <article class="Section__nosotros__2card">
+                <h3>ENCONTRANOS EN ESTOS PAÍSES</h3>
+                <li class="Section__nosotros__2card__lista" >
+                    <ul>Argentina</ul>
+                    <ul>Brasil</ul>
+                    <ul>Chile</ul>
+                    <ul>Colombia</ul>
+                    <ul>Costa Rica</ul>
+                    <ul>Ecuador</ul>
+                    <ul>México</ul>
+                    <ul>Perú</ul>
+                    <ul>Uruguay</ul>
+                </li>
+            </article>
 
     </section>
 
@@ -64,6 +97,7 @@
             <p><a href="#">Defensa del consumidor</a></p>
         </div>
     </section>
+</main>
 
     <footer class="Footer">
         <div class="Footer__redes">
