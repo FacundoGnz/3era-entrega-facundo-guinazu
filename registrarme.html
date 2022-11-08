@@ -7,39 +7,66 @@
     <title>Recolecta Te</title>
     <link rel="stylesheet" href="estilos/estilos.css">
     <link  rel="icon"   href="imagenes/logorecolecta.jpg" type="imagenes" />
-    
+    <meta name="description" content="Registrar mi comercio online. La revolución de la venta online llegó">
+    <meta name="keywords"  content="tienda online, comercio online, vender por internet, crear mi tienda online, recolecta te, registrarme">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head> 
 
 
 <header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            
 
-    <nav class="Menu">
-        <img class="Menu__Logo" src="imagenes/logorecolecta.jpg" alt="">
-        <ul class="Menu__navegacion" >
-            <li><a href="index.html"> Inicio</a></li>
-            <li><a href="minegocio.html"> Integrar mi negocio</a></li>
-            <li><a href="serrecolectador.html"> Ser recolectador</a></li>
-            <li><a href="nosotros.html"> Nosotros</a></li>
-        </ul>
-        <img class="Menu__relleno" src="imagenes/relleno.jpg" alt="">
-        <ul class="Menu__registrarme" >
-            <li><a href="registrarme.html">Registrarme</a></li>
-        </ul>
+            <div class="Logo">
+                <a href="index.html"><img src="imagenes/logo.jpg"  alt=""></a>
+            </div>    
+            
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="minegocio.html">Mi negocio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="serrecolectador.html">Ser recolectador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item-registro">
+                        <a class="nav-link" href="registrarme.html">Registrarme</a>
+                    </li>
+                </ul>
+                <div class="relleno">
+                    <img src="imagenes/relleno.jpg" alt="">
+                </div>
+            </div>
+        </div>
     </nav>
+
 </header>
 
 
 <main> 
     <div class="imagen__formulario">
         <img src="imagenes/Formulario.webp" alt="">
-        <div class="formulario-registro">
-            <form action="" method="" >
-                <input type="text" id="nombre" placeholder="Nombre">
-                <input type="text" id="apellido" placeholder="Apellido">
-                <input type="email" id="email" placeholder="Correo Electrónico">
-                <input type="password" id="password" placeholder="Contraseña">
-                <select name="pais" id="pais">
+        <div class="imagen__formulario__registro">
+            <form action="" method="" class="form" >
+                <input type="text" class="input"  id="nombre" placeholder="Nombre">
+                <input type="text" class="input"  id="apellido" placeholder="Apellido">
+                <input type="email" class="input"  id="email" placeholder="Correo Electrónico">
+                <input type="password" class="input"  id="password" placeholder="Contraseña">
+                <select name="pais" class="input"  id="pais">
                     <option value="">Argentina</option>
                     <option value="">Brasil</option>
                     <option value="">Chile</option>
@@ -50,9 +77,10 @@
                     <option value="">Perú</option>
                     <option value="">Uruguay</option>
                 </select>
-                
-                <input type="checkbox" name="terminos" id="terminos"> Acepto los <a href="#">Términos y Condiciones</a> 
-                <input type="submit" name="registrarme" id="registrarme" value="Registrarme">
+                <div >
+                <input type="checkbox" class="input"  name="terminos" id="terminos"> Acepto los <a href="#">Términos y Condiciones</a> 
+                <input type="submit"  class="btn-registro" name="registrarme" id="registrarme" value="Registrarme">
+                </div>
             </form>
         </div>
     </div>
@@ -73,7 +101,7 @@
         <p>Recolecta te - <a href="#">Términos y Condiciones</a> </p>
     </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" ></script>
 </body>
 
 </html>

@@ -55,6 +55,7 @@ transition: 0.4s;
     justify-content: center;
     align-content: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .Article__nosotros {
@@ -79,9 +80,10 @@ transition: 0.4s;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: center;
-    
+    justify-content: space-around;
+    background-color:#dee3f6;
     margin-top: 50px;
+    padding: 50px;
 
     h3{
         color: #000000;
@@ -107,24 +109,25 @@ transition: 0.4s;
         justify-content: center;
         padding-left: 30px;
         padding-right: 30px;
-        margin-right: 50px;
+        
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
+        background-color: #ffffff;
 }
 
     &__2card{
         display: flex;
         flex-direction: column;
-        
+        background-color: #ffffff;
         align-items: center;
         justify-content: center;
         padding-left: 30px;
         padding-right: 30px;
-        border: 1px solid black;
         
+        border: 1px solid black;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -135,7 +138,14 @@ transition: 0.4s;
             margin-top: 30px;
         }
 
-       
+        &__lista{
+            
+            li{
+                text-align: center;
+                
+            }
+        }
+
     }
 }
 
@@ -165,4 +175,45 @@ transition: 0.4s;
         flex-wrap: nowrap;
         align-items: center;
     }
+}
+
+
+@media (max-width:1034px) {
+
+    .Defensa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 60%;
+        }
+    }
+
+    .Main__nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Article__nosotros{
+        width: 100%;
+    }
+
+    .Section__nosotros{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__1card{
+            width: 60%;
+            margin-bottom: 40px;
+            padding: 5px;
+        }
+        &__2card{
+            width: 60%;
+            padding: 5px;
+        }
+    }
+
+    
 }

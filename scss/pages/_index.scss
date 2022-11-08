@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,9 +11,12 @@
 /* color: #10b17b; posible color a usar en titulo */
 /* Dandole estilos al nav (BOOTSTRAP)*/
 
+
 .Logo img {
     width: 50px;
 }
+
+
 
 .nav-item a{
     text-decoration: none;
@@ -34,9 +40,7 @@ transition: 0.4s;
     background-color: #ffffff;
 }
 
-.relleno img {
-    width: 100px;
-}
+
 .nav-item-registro a{
     color: #ffd64b;
     cursor: pointer;
@@ -52,7 +56,7 @@ transition: 0.4s;
 /* COMIENZO DEL SECTION (FLEXBOX) */
 
 .Section {
-    width: 100vw;
+    
     margin-top: 15px;
     display: flex;
     flex-direction: row;
@@ -65,7 +69,7 @@ transition: 0.4s;
         }
     }
     &_fondo {
-        width: max-content;
+        
         
         img{
             width: 100%;
@@ -162,6 +166,7 @@ transition: 0.4s;
 
    
 }
+ 
 
 .separador {
     width: 80%;
@@ -383,6 +388,8 @@ transition: 0.4s;
         }
 }
 
+
+
 /* FIN MEDIA QUERIES SECTION -CARDS (GRIDS) */
 
 /* COMIENZO SECTION-MARCAS (FLEXBOX) */
@@ -461,6 +468,7 @@ transition: 0.4s;
         font-size: 18px;
     }
 }
+
 
   /* FIN MEDIA QUERIES SECTION - MARCAS (FLEXBOX) */
 

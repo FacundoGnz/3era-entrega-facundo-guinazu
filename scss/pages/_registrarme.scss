@@ -1,0 +1,135 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    
+}
+/* color: #10b17b; posible color a usar en titulo */
+/* Dandole estilos al nav (BOOTSTRAP)*/
+
+
+.Logo img {
+    width: 50px;
+}
+
+
+
+.nav-item a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color:  #231552;
+    
+}
+.nav-item a:hover{
+color: #ffd64b;
+transition: 0.4s;
+}
+
+.nav-item{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container-fluid{
+    background-color: #ffffff;
+}
+
+
+.nav-item-registro a{
+    color: #ffd64b;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+
+/* Fin estilos del Nav (BOOTSTRAP) */
+
+
+.imagen__formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    
+
+    img{
+        width: 50%;
+    }
+
+    &__registro{
+        background-color:#dee3f6;
+        width: 50%;
+        align-self: center;
+        
+        .form{
+            display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+       
+           
+        .btn-registro{
+            background-color: #969bef;
+            padding: 5px;
+            margin-left: 50px;
+            border: 1px solid #dee3f6;
+            border-radius: 7px;
+            -webkit-border-radius: 7px;
+            -moz-border-radius: 7px;
+            -ms-border-radius: 7px;
+            -o-border-radius: 7px;
+            font-weight: 400;
+
+            &:hover {
+                background-color: #504b5e;
+                transition: 0.4s;
+            }
+}
+        
+
+        .input{
+            margin: 20px;
+
+         
+        }
+        }
+    }
+}
+
+
+@media (max-width:951px){
+    
+    .relleno{
+        display: none;
+    }
+    .nav-item-registro{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-item{
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .imagen__formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img{
+            width: 30%;
+        }
+
+        &__registro{
+            width: 70%;
+        }
+         }
+      
+  }

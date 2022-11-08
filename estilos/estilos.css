@@ -8420,9 +8420,6 @@ textarea.form-control-lg {
 .container-xxl {
   background-color: #ffffff; }
 
-.relleno img {
-  width: 100px; }
-
 .nav-item-registro a {
   color: #ffd64b;
   cursor: pointer;
@@ -8434,7 +8431,6 @@ textarea.form-control-lg {
 /* Fin estilos del Nav (BOOTSTRAP) */
 /* COMIENZO DEL SECTION (FLEXBOX) */
 .Section {
-  width: 100vw;
   margin-top: 15px;
   display: flex;
   flex-direction: row;
@@ -8443,10 +8439,8 @@ textarea.form-control-lg {
     width: 50%; }
     .Section__titulo__relleno {
       width: 30%; }
-  .Section_fondo {
-    width: max-content; }
-    .Section_fondo img {
-      width: 100%; }
+  .Section_fondo img {
+    width: 100%; }
   .Section__titulo {
     display: flex;
     flex-direction: column;
@@ -9007,11 +9001,10 @@ textarea.form-control-lg {
   font-size: 15px; }
 
 .Header__minegocio__section {
-  width: 100vw;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #dee3f6; }
   .Header__minegocio__section__contenedor {
     width: 50%;
@@ -9265,8 +9258,7 @@ textarea.form-control-lg {
 .Section__minegocio__2 {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  width: 100vw; }
+  flex-wrap: nowrap; }
   .Section__minegocio__2__imagen {
     width: 60%; }
     .Section__minegocio__2__imagen img {
@@ -9416,7 +9408,6 @@ textarea.form-control-lg {
 
 .Section__recolectador {
   display: flex;
-  width: 100vw;
   flex-direction: row;
   align-items: center; }
   .Section__recolectador__articulo {
@@ -9581,6 +9572,33 @@ textarea.form-control-lg {
       color: #6e6e6e;
       font-size: 15px; }
 
+@media (max-width: 848.99px) {
+  .Section__recolectador {
+    display: flex;
+    flex-direction: column; }
+  .Section__recolectador__articulo {
+    display: flex;
+    flex-direction: column; }
+    .Section__recolectador__articulo__titulo h3, .Section__recolectador__articulo__titulo .h3 {
+      font-size: 20px; }
+  .Section__recolectador__cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .Section__recolectador__cards_card1 {
+      width: 60%; }
+    .Section__recolectador__cards_card2 {
+      width: 60%; }
+    .Section__recolectador__cards_card3 {
+      width: 60%; }
+  .Main__recolectador__h3 {
+    width: 100%; }
+  .Main__recolectador__section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
 * {
   margin: 0px;
   padding: 0px;
@@ -9632,7 +9650,8 @@ textarea.form-control-lg {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 .Article__nosotros {
   width: 100%;
@@ -9650,8 +9669,10 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: center;
-  margin-top: 50px; }
+  justify-content: space-around;
+  background-color: #dee3f6;
+  margin-top: 50px;
+  padding: 50px; }
   .Section__nosotros h3, .Section__nosotros .h3 {
     color: #000000;
     letter-spacing: 2px;
@@ -9670,15 +9691,16 @@ textarea.form-control-lg {
     justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
-    margin-right: 50px;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
-    -o-border-radius: 10px; }
+    -o-border-radius: 10px;
+    background-color: #ffffff; }
   .Section__nosotros__2card {
     display: flex;
     flex-direction: column;
+    background-color: #ffffff;
     align-items: center;
     justify-content: center;
     padding-left: 30px;
@@ -9691,6 +9713,8 @@ textarea.form-control-lg {
     -o-border-radius: 10px; }
     .Section__nosotros__2card h3, .Section__nosotros__2card .h3 {
       margin-top: 30px; }
+    .Section__nosotros__2card__lista li {
+      text-align: center; }
 
 .Defensa {
   display: flex;
@@ -9711,3 +9735,119 @@ textarea.form-control-lg {
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center; }
+
+@media (max-width: 1034px) {
+  .Defensa {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Defensa img {
+      width: 60%; }
+  .Main__nosotros {
+    display: flex;
+    flex-direction: column; }
+  .Article__nosotros {
+    width: 100%; }
+  .Section__nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Section__nosotros__1card {
+      width: 60%;
+      margin-bottom: 40px;
+      padding: 5px; }
+    .Section__nosotros__2card {
+      width: 60%;
+      padding: 5px; } }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+/* color: #10b17b; posible color a usar en titulo */
+/* Dandole estilos al nav (BOOTSTRAP)*/
+.Logo img {
+  width: 50px; }
+
+.nav-item a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #231552; }
+
+.nav-item a:hover {
+  color: #ffd64b;
+  transition: 0.4s; }
+
+.nav-item {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl,
+.container-xxl {
+  background-color: #ffffff; }
+
+.nav-item-registro a {
+  color: #ffd64b;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 15px; }
+
+/* Fin estilos del Nav (BOOTSTRAP) */
+.imagen__formulario {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-bottom: 20px; }
+  .imagen__formulario img {
+    width: 50%; }
+  .imagen__formulario__registro {
+    background-color: #dee3f6;
+    width: 50%;
+    align-self: center; }
+    .imagen__formulario__registro .form {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      .imagen__formulario__registro .form .btn-registro {
+        background-color: #969bef;
+        padding: 5px;
+        margin-left: 50px;
+        border: 1px solid #dee3f6;
+        border-radius: 7px;
+        -webkit-border-radius: 7px;
+        -moz-border-radius: 7px;
+        -ms-border-radius: 7px;
+        -o-border-radius: 7px;
+        font-weight: 400; }
+        .imagen__formulario__registro .form .btn-registro:hover {
+          background-color: #504b5e;
+          transition: 0.4s; }
+      .imagen__formulario__registro .form .input {
+        margin: 20px; }
+
+@media (max-width: 951px) {
+  .relleno {
+    display: none; }
+  .nav-item-registro {
+    text-align: center;
+    margin-top: 10px; }
+  .nav-item {
+    border-bottom: 1px solid #e0e0e0; }
+  .imagen__formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .imagen__formulario img {
+      width: 30%; }
+    .imagen__formulario__registro {
+      width: 70%; } }
